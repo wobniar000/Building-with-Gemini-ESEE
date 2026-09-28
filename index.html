@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESEEE 333: Planning & Instruction: STEM</title>
+  <style>
+    :root {
+      --bg-color: #fcfcfc;
+      --card-bg: #ffffff;
+      
+      --text-color: #1f2937;
+      --muted-text: #4b5563;
+      --primary: #044b36;
+      --accent: #0f766e;
+      --border-color: #e5e7eb;
+      --highlight: #f0fdf4;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      font-size: 1.125rem;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: #ffffff;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+    }
+
+    nav a:hover, nav a:focus {
+      background-color: var(--highlight);
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+    }
+
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.75rem;
+      margin-bottom: 2rem;
+      scroll-margin-top: 4.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      color: var(--accent);
+      margin: 1.25rem 0 0.5rem 0;
+    }
+
+    p, ul {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 1.05rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 0.75rem 1rem;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f3f4f6;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    .btn-link {
+      display: inline-block;
+      background-color: var(--primary);
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 0.5rem;
+    }
+
+    .btn-link:hover, .btn-link:focus {
+      background-color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1rem;
+      color: var(--muted-text);
+      border-top: 1px solid var(--border-color);
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ESEEE 333: Planning & Instruction: STEM</h1>
+    <p>Instructor: Stacy A. George | Fall 2026</p>
+  </header>
+
+  <nav aria-label="Course Sections">
+    <a href="#glance">Course at a glance</a>
+    <a href="#schedule">Weekly schedule</a>
+    <a href="#grades">How grades work</a>
+    <a href="#policies">Policies</a>
+    <a href="#practice">Practice</a>
+  </nav>
+
+  <main>
+    <section id="glance">
+      <h2>Course at a glance</h2>
+      <ul>
+        <li><strong>Meeting Times:</strong> Wednesdays, 7:50 AM - 1:20 PM (In-Person)</li>
+        <li><strong>Location:</strong> Makawalu N4</li>
+        <li><strong>Instructor:</strong> Stacy A. George</li>
+        <li><strong>Email:</strong> stacya@hawaii.edu</li>
+        <li><strong>Phone:</strong> (808) 398-5362</li>
+        <li><strong>Office:</strong> UH Manoa, Everly 223F</li>
+        <li><strong>Mailbox:</strong> Everly Hall, Rm 222</li>
+        <li><strong>Office Hours:</strong> By appointment</li>
+      </ul>
+    </section>
+
+    <section id="schedule">
+      <h2>Weekly schedule</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Week</th>
+              <th scope="col">Topic</th>
+              <th scope="col">Reading</th>
+              <th scope="col">What is Due</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Week 1</strong><br>Aug 26</td>
+              <td>
+                <strong>Introduction to STEM & Engineering:</strong><br>
+                Community building activity; syllabus & course expectations; set up STEM Notebook & journal instructions; 5E Model; HIDOE STEM & FAIR features; pencil innovation investigation.
+              </td>
+              <td><em>None listed</em></td>
+              <td>Journal Entry 1 Task: Pencil Innovation</td>
+            </tr>
+            <tr>
+              <td><strong>Week 2</strong><br>Sept 2</td>
+              <td>
+                <strong>STEM Lesson (Math & Science Integration):</strong><br>
+                Balanced & unbalanced forces; mobiles; PhET simulation (Balancing Act); SolveMe Mobiles; Project 1 group slidedecks.
+              </td>
+              <td>Read: <em>"The World Needs More Students With Interdisciplinary Education"</em> (be prepared to discuss)</td>
+              <td>Journal Entry 2 Task: Walking the Fine Line</td>
+            </tr>
+            <tr>
+              <td><strong>Week 3</strong><br>Sept 9</td>
+              <td>
+                <strong>STEM Lesson (Technology Focus):</strong><br>
+                Engineering design process for mobile; complete mobile design; Tinkercad (Project 1); design a claw machine (Project 2).
+              </td>
+              <td><em>None listed</em></td>
+              <td>
+                • <strong>Sept 11:</strong> Project 1 Due (upload link to group Mobile Slides to Lamakū)<br>
+                • Journal Task 3
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Week 4</strong><br>Sept 16</td>
+              <td>
+                <strong>Digital Literacy, Tech Tools & Lesson Planning:</strong><br>
+                Makey Makey (Plug and Play, Scratch); ESEE lesson plan; FAIR features; ISTE standards (tech); Subject Matter Standards.
+              </td>
+              <td><em>None listed</em></td>
+              <td>Journal Entry 4 Task</td>
+            </tr>
+            <tr>
+              <td><strong>Week 5</strong><br>Sept 23</td>
+              <td>
+                <strong>Claw Machine Engineering & Lesson Plan Work Time:</strong><br>
+                Claw machine project and team work time for lesson planning.
+              </td>
+              <td><em>None listed</em></td>
+              <td>
+                • Journal Entry 5: No journal task today<br>
+                • Reminder: Lesson plan draft due next week Tuesday in Lamakū
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Week 6</strong><br>Sept 30</td>
+              <td>
+                <strong>Technology & Computer Science:</strong><br>
+                Claw machine completion; AI in STEM; 3D printing (Tinkercad); computer science programming; VR/AR; introduce Project 3.
+              </td>
+              <td><em>None listed</em></td>
+              <td>
+                • <strong>Due Tuesday, Sept 29 by 11:59 PM:</strong> STEM Lesson Plan Draft to Lamakū<br>
+                • Work on Project 2: Claw Machine Slidedeck<br>
+                • Journal Entry 6 Task
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Week 7</strong><br>Oct 7</td>
+              <td>
+                <strong>UH Lab School Prep:</strong><br>
+                Project 2 & 3 work time; preparation for lesson implementation.
+              </td>
+              <td><em>None listed</em></td>
+              <td>
+                • <strong>Due Wednesday, Oct 7 by 11:59 PM:</strong> Mini Project 2 Claw Machine Slidedeck<br>
+                • Journal Entry 7: None
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Week 8</strong><br>Oct 14</td>
+              <td>
+                <strong>Lesson Plan Implementation:</strong><br>
+                Lesson implementation with UH Lab School (Grades 2–3, 5–6) and implementation with peers; reflection.
+              </td>
+              <td><em>None listed</em></td>
+              <td>
+                • <strong>Due Tuesday, Oct 13 by 11:59 PM:</strong> Mini Project 3<br>
+                • <strong>Due Wednesday, Oct 14:</strong> Lesson Plan Final (template)<br>
+                • <strong>Due Wednesday, Oct 14:</strong> Journal Due<br>
+                • Journal Entry 8: None
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="grades">
+      <h2>How grades work</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Assignment / Requirement</th>
+              <th scope="col">Description</th>
+              <th scope="col">Estimated Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Attendance</td>
+              <td>Recorded for each class (8 classes &times; 5 points; points deducted for missed classes)</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>Participation</td>
+              <td>Participation points tied to your journal and class discussions</td>
+              <td>17 (16+1)</td>
+            </tr>
+            <tr>
+              <td>Professionalism</td>
+              <td>Professional Dispositions: Ho'oulu: Growing as a Professional</td>
+              <td>17 (16+1)</td>
+            </tr>
+            <tr>
+              <td>Course Survey</td>
+              <td>2 surveys &times; 5 points each</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>STEM Journal/Notebook</td>
+              <td>STEM journal/notebook template (8 classes &times; 5 points each)</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>STEM Mini Lesson</td>
+              <td>Science/Engineering, Mathematics Integration, Technology Integration (Lesson Plan, Implementation, and Reflection)</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>3 Projects</td>
+              <td>
+                • Project 1: Integrated STEM project (100 pts)<br>
+                • Project 2: Integrated AI Project (100 pts)<br>
+                • Project 3: Integrated STEM Tech/Computer Science (100 pts)
+              </td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td><strong>Total Estimated Points</strong></td>
+              <td></td>
+              <td><strong>500</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Grading Scale</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Percentage</th>
+              <th scope="col">Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>90–100%</td><td>A</td></tr>
+            <tr><td>80–89%</td><td>B</td></tr>
+            <tr><td>74–79%</td><td>C</td></tr>
+            <tr><td>70–73%</td><td>C- (Requires repeating the course)</td></tr>
+            <tr><td>60–69%</td><td>D</td></tr>
+            <tr><td>Below 60%</td><td>F</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><em>Note: If a candidate earns a grade below a "C" (e.g., C- or below), the candidate will be required to repeat the course. ALL assignments must be submitted on time to be considered for a letter grade of "A".</em></p>
+    </section>
+
+    <section id="policies">
+      <h2>Policies</h2>
+      
+      <h3>Attendance & Tardy Policy</h3>
+      <p>The class is condensed to 8 weeks; each class is worth 2 traditional class periods. An absence from one class warrants 2 days of missed class. Multiple absences will result in lowering of the course grade. Credit for attendance is only achieved by attending in-person classes on campus; teacher candidates will not be provided the option to Zoom. An unexcused first absence may result in a full letter grade deduction in the final course grade (e.g., from A to B). Missing up to one hour of a class period will be considered a tardy; missing more than one hour will be considered an absence. Two tardies count as one absence.</p>
+
+      <h3>Late Work Policy</h3>
+      <p>Any assignment not turned in by Tuesday, 11:59 PM (unless noted differently) is considered late. There is a deduction of 10% from the assignment's grade per day. Any assignment over two days late may not receive credit (zero points); after two days, late assignments will be accepted, but may result in zero points. All assignments must be completed and submitted to pass the course. All assignments must be submitted on time to be considered for a letter grade of "A". No Incomplete (I) grades will be given, except for medical reasons with appropriate documentation.</p>
+
+      <h3>Assignment Submissions & Google Docs</h3>
+      <p>Submit assignments via Lamakū; emailed assignments will not be credited. Name documents: <code>Last Name_First Name_Assignment Title</code>. When using Google Docs, change sharing settings so the instructor can "edit" (University of Hawaii group or Anyone with the link set to Editor). Once the link is submitted to Lamakū, do not revise, edit, or complete the assignment after the timestamp. Work completed on a Google Doc after the timestamp receives a late penalty and violates the academic integrity policy.</p>
+
+      <h3>Appropriate Use of Artificial Intelligence (AI)</h3>
+      <p>Students are expected to be the primary and predominant authors of all work. Generative AI tools may be used for brainstorming or generating basic ideas, but final submissions must showcase the candidate's own unique thinking, align with course requirements, and be tailored to the school context. Using AI to write or complete assignments on behalf of the student is not permitted. Do not cite external sources generated by AI. Any AI use must be acknowledged with a disclosure statement at the end of the assignment.</p>
+
+      <h3>Academic Integrity & Ethical Behavior</h3>
+      <p>Cheating, fabrication, tampering, plagiarism, or facilitating such activities will result in failure of the course and possible dismissal from the program. All submitted work must be in candidates' own words. Incidents of suspected academic dishonesty are reported to the Office of Student Conduct.</p>
+
+      <h3>Electronic Devices in Class</h3>
+      <p>Bring laptops or tablets fully charged. Screens must be kept down until ready to use. Do not engage in personal emails, instant messaging, games, or recreational surfing. Cell phones must be turned off or on silent, unless used as an organizational tool as permitted by the instructor.</p>
+
+      <h3>STEM Safety</h3>
+      <p>Safety is a priority, a STEM benchmark, and candidate responsibility. Model and teach students safe conduct. Every unit and lesson plan developed must specifically state in writing how it addresses safety. Eating is usually not permitted in the STEM classroom.</p>
+    </section>
+
+    <section id="practice">
+      <h2>Practice</h2>
+      <p>Access the course practice material below:</p>
+      <a href="quiz.html" class="btn-link">Practice quiz</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Instructor: Stacy A. George | 2026</p>
+  </footer>
+</body>
+</html>
